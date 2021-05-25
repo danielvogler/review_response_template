@@ -1,0 +1,103 @@
+\documentclass[english]{ethbrief3}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[pdfborder={0 0 0},pdftex]{hyperref}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{biblatex}
+\addbibresource{bibliography.bib}
+
+\EthLang{
+  \RequirePackage[document]{ragged2e}
+  \RequirePackage{ngerman}
+  \PassOptionsToPackage{ngerman}{babel}
+}{
+  \PassOptionsToPackage{english}{babel}
+}
+
+% Declaration of the personal data
+    \EthFirstUnitName{\EthLang{GEG Group}{GEG Group}}
+    \EthSecondUnitName{\EthLang{Institute of Geophysics}{Institute of Geophysics}}
+    \EthName{ETH \Zurich}
+    \EthPersName{\EthLang{Dr. E. Xample}{Dr. E. Xample}}
+    \EthPersPosition{\EthLang{Senior Scientist}{Senior Scientist}}
+     \EthOffice{\EthLang{NO F45}{NO F45}}
+     \EthStreet{\EthLang{Raemistr. 101}{Raemistr. 5}}
+     \EthTown{8092 \Zurich}
+     \EthCountry{\Switzerland} 
+\EthLang{
+     \EthEmail{max.mustemannr@ethz.ch}
+     \EthWeb{www.max.muster.ethz.ch}
+}{
+     \EthEmail{example@ethz.ch}
+     \EthWeb{www.geg.ethz.ch}
+}
+
+\signaturefile[0.5cm]{\includegraphics[height=1cm]{mysig}} % include a signature file
+\signature{E. Xample}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Article and Journal title
+\newcommand{\articleTitle}{Example title}
+\newcommand{\articleAbbr}{\#ID}
+\newcommand{\journalTitle}{Example Journal}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\ie}{{\it i.e., }}
+\newcommand{\eg}{{\it e.g., }}
+\newcommand{\fixme}[1]{ { \bf {\Large\color{red}FIX ME \color{black}} #1 } }
+\newcommand{\comment}[1]{ { \it #1 \\[5pt]} }
+\newcommand{\response}[1]{ { \underline{Response:}\\#1} }
+
+\date{\today}
+
+\title{\vspace{-10mm}Response to Reviewers for \journalTitle paper \articleAbbr  ''\articleTitle''  }
+
+\subject[Review response - \articleAbbr]{Review response - \articleAbbr}
+\recipient{ETH Zurich\\R\"{a}mistrasse 101\\8092 Zurich}
+
+\begin{document}
+
+\begin{letter}{}
+
+\opening{To the editors of \journalTitle,}
+
+We would like to express our gratitude to the reviewers and editors for their valuable comments and suggested improvements to our manuscript, \\{\it \articleAbbr - \articleTitle}. 
+
+We value this feedback and have taken the reviewer comments into consideration for the revised manuscript. An itemized list of individual reviewer comments and our responses are given below.
+
+\closing{Sincerely,}\end{letter}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+{\Large Response to Reviewers for \journalTitle ~paper \articleAbbr - ''\articleTitle'' - The Original Submission resubmitted as Revision 1}
+\vspace{1cm}
+
+
+{\bf Response to comments from Reviewer \# 1.}
+
+\begin{enumerate}
+\item \comment{First review comment here}
+\response{Response here.}
+
+\item \comment{Second review comment here}
+\response{Response here \cite{biela_2009,kim_2011}.}
+
+\end{enumerate}
+
+
+{\bf Response to comments from Reviewer \# 2.}
+
+\begin{enumerate}
+\item \comment{First review comment here}
+\response{Response here.}
+
+\item \comment{Second review comment here}
+\response{Response here \cite{kim_2011}.}
+
+\end{enumerate}
+
+
+\printbibliography
+
+
+\end{document}
